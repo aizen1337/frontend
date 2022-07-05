@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center
+        h-20 w-20 mt-2 mb-2 mx-auto shadow-lg
+        text-4xl
+        bg-gray-800 text-purple-400
+        rounded-3xl
+        hover:text-white
+        hover:bg-purple-400
+        hover:cursor-pointer
+        hover:rounded-xl
+        transition-all duration-300 ease-linear;
+    }
+}
